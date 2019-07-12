@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Zarządzaj meczami"
+        android:textColor="#000"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentTop="true" />
+
+
+    <Button
+        android:id="@+id/add_button"
+        android:layout_width="96dp"
+        android:layout_height="30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:paddingBottom="2dp"
+        android:paddingLeft="20dp"
+        android:text="dodaj"
+        android:textColor="@android:color/black"
+        tools:layout_editor_absoluteX="3dp"
+        tools:layout_editor_absoluteY="357dp" />
+
+    <ListView
+        android:id="@+id/listview_matches"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView9"
+        android:background="@color/cardview_light_background"
+        android:choiceMode="singleChoice" />
+
+    <EditText
+        android:id="@+id/drawcourse_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tv1"
+        android:backgroundTint="@android:color/black"
+        android:ems="10"
+        android:hint="drawcourse"
+        android:inputType="text"
+        android:textCursorDrawable="@null" />
+
+    <EditText
+        android:id="@+id/homecourse_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/drawcourse_edittext"
+        android:backgroundTint="@android:color/black"
+        android:ems="10"
+        android:hint="hmoecourse"
+        android:inputType="text"
+        android:textCursorDrawable="@null" />
+
+    <EditText
+        android:id="@+id/awaycourse_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/homecourse_edittext"
+        android:backgroundTint="@android:color/black"
+        android:ems="10"
+        android:hint="awaycourse"
+        android:inputType="text"
+        android:textCursorDrawable="@null" />
+
+    <EditText
+        android:id="@+id/away_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/awaycourse_edittext"
+        android:backgroundTint="@android:color/black"
+        android:ems="10"
+        android:hint="away"
+        android:inputType="text"
+        android:textCursorDrawable="@null" />
+
+    <EditText
+        android:id="@+id/home_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/away_edittext"
+        android:backgroundTint="@android:color/black"
+        android:ems="10"
+        android:hint="hmoe"
+        android:inputType="text"
+        android:textCursorDrawable="@null" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/home_edittext"
+        android:layout_marginTop="34dp"
+        android:text="Aby usunąć, kliknij ostatni mecz z listy"
+        android:textColor="#000" />
+</RelativeLayout>
